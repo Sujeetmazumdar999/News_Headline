@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getNews</title>
+</head>
+<body>
+    <style>
+        th{
+            font-size: 200%;
+            color: green;
+            font-style: oblique;
+        }
+ 
+        td {
+               width: 1600px;
+               color:red;
+               font-size: 25px;
+               text-align: center;
+               border: 2px solid black;
+               padding: 15px;
+               background-color: yellow;
+             }
+       </style>
+    <table>
+        <thead>
+          <tr>
+              <th>News Head lines</Head></th>
+          </tr>
+          </thead>    
+          <tbody>
+           {% for i in msg %}    
+                  <tr>
+                      <td>{{i}}</td>
+                  </tr>
+            {% endfor %}
+          </tbody>
+      </table> 
+</body>
+</html>
